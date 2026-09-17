@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assembly Line Analyzer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0a0a0a;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+      height: 100vh;
+    }
+    #root { height: 100vh; display: flex; flex-direction: column; }
+
+    @keyframes bn-pulse {
+      0%, 100% { opacity: 0.5; }
+      50%       { opacity: 1;   }
+    }
+    @keyframes glow-pulse {
+      0%, 100% { filter: drop-shadow(0 0 3px #ff4444); }
+      50%       { filter: drop-shadow(0 0 8px #ff4444); }
+    }
+    .bn-glow { animation: glow-pulse 1.4s ease-in-out infinite; }
+    .bn-text  { animation: bn-pulse  1.4s ease-in-out infinite; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
