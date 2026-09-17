@@ -28,6 +28,16 @@ dist/
 *.mp4
 *.mov
 *.avi
-output/
+output/*
+!output/.gitkeep
+!input/.gitkeep
 # YOLO weights auto-download on first run
 *.pt
+
+# AI assistant notes (local only)
+CLAUDE.md
+**/CLAUDE.md
+**/[Ff]rontend.md
+SKILL.md
+.claude/
+*.tsbuildinfo

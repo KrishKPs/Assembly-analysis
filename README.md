@@ -27,7 +27,6 @@ Put a conveyor-belt video at `input/4156510-hd_1920_1080_30fps.mp4` (or change `
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-mkdir -p input output
 
 python main.py          # process the video offline → output/clean.mp4, output/animated.mp4
 python run_server.py    # or: live mode, websocket on :8000
